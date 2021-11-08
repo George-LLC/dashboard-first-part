@@ -1,0 +1,207 @@
+//  big buttons Active, inactive
+.btnBigActive, .btnBigInactive {
+  border-radius: 100px;
+  border: none;
+  width: 100%;
+  max-width: 425px;
+  height: 63px;
+  cursor: pointer;
+  @include fontParHeading;
+  color: #F6F6F6;
+}
+.btnBigActive {
+  background: $colorPrimary;
+}
+.btnBigInactive {
+  background: $colorInactive;
+}
+
+// small buttons  Active, Inactive, Not Selected
+.btnSmActive, .btnSmInactive, .btnSmNotSelected {
+  border-radius: 20px;
+  width: 100%;
+  max-width: 183px;
+  height: 34px;
+  cursor: pointer;
+  @include fontParSubHeading;
+  font-size: 14px;
+}
+.btnSmNotSelected {
+  background: $colorWhite;
+  border: 1.5px solid $colorInactive;
+  border-radius: 20px;
+  color: $colorPrimaryTxt;
+}
+.btnSmActive {
+  background: $colorPrimary;
+  border: none;
+  color: $colorWhite;
+}
+.btnSmInactive {
+  background: $colorInactive;
+  border: none;
+  color: $colorWhite;
+}
+
+// Confirm & Cancel buttons
+.btnConfirm {
+  width: 100%;
+  max-width: 99px;
+  height: 34px;
+  background: $colorPrimary;
+  border-radius: 20px;
+  border: none;
+  color: $colorWhite;
+  @include fontParSubHeading;
+  font-size: 14px;
+}
+.btnConfirm:before {
+  content: url("../images/icons/checked.png");
+  margin-right: 3px;
+}
+
+.btnCancel {
+  width: 100%;
+  max-width: 95px;
+  height: 34px;
+  border: 1.5px solid $colorWarningNegative;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background: $colorWhite;
+  color: $colorWarningNegative;
+  @include fontParSubHeading;
+  font-size: 14px;
+}
+.btnCancel:before {
+  content: url("../images/icons/close.png");
+  margin-right: 8px;
+}
+
+//  menu buttons Filters active, inactive
+.btnFilterInactive {
+  width: 100%;
+  max-width: 87px;
+  height: 34px;
+  background: $colorWhite;
+  border: 1.5px solid $colorInactive;
+  box-sizing: border-box;
+  border-radius: 20px;
+  @include fontParSubHeading;
+  font-size: 14px;
+  color: $colorPrimaryTxt;
+}
+.btnFilterInactive:before {
+  content: url("../images/icons/filterBlack.png");
+  margin-right: 8px;
+}
+
+.btnFilterActive {
+  width: 100%;
+  max-width: 87px;
+  height: 34px;
+  background: $colorPrimary;
+  border: 1.5px solid $colorPrimary;
+  box-sizing: border-box;
+  border-radius: 20px;
+  @include fontParSubHeading;
+  font-size: 14px;
+  color: $colorWhite;
+}
+.btnFilterActive:before {
+  content: url("../images/icons/filterWhite.png");
+  margin-right: 8px;
+}
+
+//  page tabs active, inactive
+.btnPageTabsActive {
+  width: 100%;
+  max-width: 160px;
+  height: 34px;
+  background: $colorPrimary;
+  border: 1.5px solid $colorPrimary;
+  box-sizing: border-box;
+  border-radius: 50px;
+  @include fontParSubHeading;
+  font-size: 14px;
+  color: $colorWhite;
+}
+
+.btnPageTabsInactive {
+  width: 100%;
+  max-width: 160px;
+  height: 34px;
+  background: $colorWhite;
+  border: 1.5px solid $colorInactive;
+  box-sizing: border-box;
+  border-radius: 50px;
+  @include fontParSubHeading;
+  font-size: 14px;
+  color: $colorPrimaryTxt;
+}
+
+//  dropdowns
+.dropdown {
+  background: $colorWhite;
+  border: 1.5px solid $colorInactive;
+  box-sizing: border-box;
+  border-radius: 20px;
+  @include fontParSubHeading;
+  font-size: 14px;
+  color: $colorPrimaryTxt;
+}
+.dropdown:after {
+  content: url("../images/icons/arrow.png");
+  margin-left: 10px;
+}
+
+//  banners error and success
+.bannerSuccessMessage {
+  background: $colorPrimary;
+  @include fontParBodyText;
+  font-size: 16px;
+  height: 44px;
+  width: 100%;
+}
+.bannerErrorMessage {
+  background: $colorWarningNegative;
+  @include fontParBodyText;
+  font-size: 16px;
+  height: 44px;
+  width: 100%;
+}
+
+//  misc Labels - flags, checked, active, inactive
+
+//  flags
+.btnFlagActiveYellow, .btnFlagActiveGreen, .btnFlagInactive, .btnCheckedActiveYellow, .btnCheckedActiveGreen, .btnCheckedActiveInactive {
+  width: 100%;
+  max-width: 84px;
+  height: 24px;
+  border-radius: 20px;
+  @include fontParHighlighter;
+  color: $colorWhite;
+  border: none;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+.btnFlagActiveYellow {
+  background: $colorOptional2ForLabel;
+}
+.btnFlagActiveGreen {
+  background: $colorOptionalForLabel;
+}
+.btnFlagInactive {
+  background: $colorInactive;
+}
+.btnFlagInactive:before, .btnFlagActiveGreen:before, .btnFlagActiveYellow:before {
+  content: url("../images/icons/flag.png");
+  margin-right: 5px;
+}
+
+//  checked
+.btnCheckedActiveYellow:before, .btnCheckedActiveGreen:before, .btnCheckedActiveInactive:before {
+  content: url("../images/icons/checked.png");
+  margin-right: 5px;
+}
+
+

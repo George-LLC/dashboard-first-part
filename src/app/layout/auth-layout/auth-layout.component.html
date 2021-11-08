@@ -1,0 +1,38 @@
+<main fxLayout.gt-sm="row" fxLayout.lt-sm="column">
+
+  <div class="leftContent" fxFlex.gt-sm="45%" fxLayout="column" fxLayoutAlign="space-around center">
+    <div fxLayout="row">
+
+      <div fxLayout="column" fxLayoutAlign="center center">
+
+        <div class="txt">
+          <p>
+            “ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. “
+          </p>
+        </div>
+        <div class="txtTitle" fxLayout="row" fxLayoutAlign="start center">
+          <img src="../../../assets/images/img/Group134.png" alt="author image">
+          <p>Mike Wong, ABC Pte Ltd</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="logo" fxLayout="row" fxLayoutAlign="center center">
+      <img src="../../../assets/images/icons/Merchaint-Logo-white.png" alt="logo Merchaint">
+    </div>
+
+
+
+  </div>
+
+  <div class="rightContent" fxLayout="column" fxFlex.gt-sm="55%">
+    <div class="back" fxLayout="row" fxLayoutAlign="start center" routerLink="login">
+      <img src="../../../assets/images/icons/backArrow.png" alt="back arrow">
+      <p>Back</p>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+
+</main>

@@ -1,0 +1,70 @@
+//  fonts
+@import "src/assets/fonts/Roboto/stylesheet";
+
+//  variables
+@import "src/assets/styles/_vars";
+
+//  typography
+@import "src/assets/styles/_typography";
+
+
+main {
+  width: 100%;
+  max-width: 425px;
+
+  .title {
+    @include fontParHeadline;
+    color: $colorPrimaryTxt;
+    margin-bottom: 12px;
+  }
+
+  .dividerCustom {
+    border: 1px solid #DDDDDD;
+    width: 100%;
+    max-width: 425px;
+  }
+
+  .email_block {
+    margin-top: 17px;
+  }
+   .password_block {
+     margin-top: 25px;
+     margin-bottom: 25px;
+   }
+
+  .email_block label, .password_block label {
+    @include fontParSubHeading;
+    color: $colorBlack;
+    margin-bottom: 15px;
+  }
+
+  .inputNormal {
+    width: 100%;
+    max-width: 425px;
+  }
+
+  .forgPassw {
+    @include fontParBodyText;
+    color: $colorBlack;
+    cursor: pointer;
+    width: max-content
+  }
+
+  .login_block {
+    margin-top: 42px;
+    margin-bottom: 24px;
+  }
+
+  .newAccount {
+    text-align: center;
+    a {
+      @include fontParBodyText;
+      color: $colorBlack;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+
+
+
+}

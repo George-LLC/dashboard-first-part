@@ -1,0 +1,14 @@
+<main class="sidenav">
+  <div class="logo" fxLayout="row" fxLayoutAlign="center center">
+    <img class="logo_img" src="../../../assets/images/icons/logo.png" alt="">
+    <p class="logo_txt">merchaint</p>
+  </div>
+  <div class="sideNavWrapper">
+    <ul class="nav_list" fxLayout="column" fxLayoutAlign="center center" >
+      <li class="nav_list__link" fxLayout="row" fxLayoutAlign="start center" *ngFor="let item of routesSideNav" [routerLink]="item.path"  routerLinkActive="nav_list__link__active" #rla="routerLinkActive">
+        <img src="{{ rla.isActive ? item.iconActive : item.iconInActive }}" [alt]="item.title">
+        <p> {{ item.title }} </p>
+      </li>
+    </ul>
+  </div>
+</main>

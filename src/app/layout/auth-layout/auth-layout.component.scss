@@ -1,0 +1,107 @@
+//  fonts
+@import "src/assets/fonts/Roboto/stylesheet";
+
+//  media breakpoints
+@import "src/assets/styles/media-breakpoints";
+
+//  variables
+@import "src/assets/styles/_vars";
+
+//  typography
+@import "src/assets/styles/_typography";
+
+//  inputs
+@import "src/assets/styles/_inputs";
+
+//  buttons
+@import "src/assets/styles/_buttons";
+
+
+main {
+  height: 100vh;
+
+  @include lt-md {
+    flex-flow: column-reverse;
+  }
+
+  .leftContent {
+    background: url("../../../assets/images/img/colorMix.jpg") no-repeat;
+    background-size: 100% 100%;
+    padding-left: 80px;
+    padding-right: 80px;
+
+    .txt {
+      @include fontParHeadline;
+      font-size: 30px;
+      //margin-top: 223px;
+      margin-top: 25px;
+      //margin-bottom: 28px;
+      margin-bottom: 28px;
+      color: $colorWhiteTitle;
+
+      p {
+        //width: 100%;
+        //max-width: 484px;
+      }
+    }
+
+    .txtTitle {
+      @include fontParHeadline;
+      color: $colorWhiteTitle;
+      font-size: 25px;
+      //margin-bottom: 251px;
+      margin-bottom: 25px;
+      width: 100%;
+
+      @include lt-sm {
+        font-size: 20px;
+      }
+
+      p {
+        margin-left: 20px;
+      }
+    }
+    .logo {
+      //margin-bottom: 78px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .rightContent {
+    background-color: #E5E5E5;
+
+    @include gt-sm {
+      padding-left: 128px;
+      padding-right: 25px;
+    }
+
+    @include lt-md {
+      padding-left: calc(100% - 75%);
+      padding-right: calc(100% - 75%);
+      padding-bottom: 25px;
+    }
+
+    @media (max-width: 450px) {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+
+    .back {
+      margin-top: 51px;
+      margin-bottom: 53px;
+      cursor: pointer;
+      width: max-content;
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+
+      p {
+        margin-left: 13px;
+        @include fontParHeading;
+      }
+    }
+  }
+
+}

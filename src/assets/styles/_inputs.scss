@@ -1,0 +1,70 @@
+//  inputs
+.inputNormal {
+  height: 48px;
+  border: 1px solid $colorPrimaryTxt;
+  box-sizing: border-box;
+  border-radius: 8px;
+  @include fontParBodyText;
+  color: $colorPrimaryTxt;
+  text-indent: 20px;
+}
+.inputNormal:focus {
+  outline: $colorPrimaryTxt;
+}
+.inputActive {
+  height: 48px;
+  border: 1px solid $colorPrimary;
+  box-sizing: border-box;
+  border-radius: 8px;
+  @include fontParBodyText;
+  color: $colorPrimary;
+  text-indent: 20px;
+}
+.inputActive:focus {
+  outline: $colorPrimary;
+}
+.inputError {
+  height: 48px;
+  border: 1px solid $colorWarningNegative;
+  box-sizing: border-box;
+  border-radius: 8px;
+  @include fontParBodyText;
+  color: $colorWarningNegative;
+  text-indent: 20px;
+}
+.inputError:focus {
+  outline: $colorWarningNegative;
+}
+
+//  search inputs
+.inputSearchNormal {
+  height: 34px;
+  border: 1.5px solid $colorInactive;
+  box-sizing: border-box;
+  border-radius: 20px;
+  @include fontParHighlighter;
+  color: $colorPrimaryTxt;
+}
+.inputSearchNormal:focus {
+  outline: $colorInactive;
+}
+
+.inputSearchActive {
+  height: 34px;
+  border: 1.5px solid $colorPrimary;
+  box-sizing: border-box;
+  border-radius: 20px;
+  @include fontParHighlighter;
+  color: $colorPrimary;
+}
+.inputSearchActive:focus {
+  outline: $colorPrimary;
+}
+
+//  inputs for small field (setting, invoice)
+.inputTitleSmF, .inputMessageSmF {
+  @include fontParHighlighter;
+  color: #000000;
+  background: #F1F1F1;
+  border: none;
+}

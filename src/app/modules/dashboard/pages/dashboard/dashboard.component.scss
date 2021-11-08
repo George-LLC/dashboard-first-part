@@ -1,0 +1,177 @@
+//  media breakpoints
+@import "src/assets/styles/media-breakpoints";
+
+//  fonts
+@import "src/assets/fonts/Roboto/stylesheet";
+
+//  variables
+@import "src/assets/styles/_vars";
+
+//  typography
+@import "src/assets/styles/_typography";
+
+//  inputs
+@import "src/assets/styles/_inputs";
+
+//  buttons
+@import "src/assets/styles/_buttons";
+
+
+
+
+.content {
+  margin-left: 25px;
+
+  //  select & create a doc button
+  .header {
+    .header_title {
+      H2 {
+        @include fontParHeading;
+        color: $colorPrimaryTxt;
+      }
+    }
+    .header_input {
+      margin-top: 16px;
+      margin-bottom: 26px;
+      color: $colorPrimaryTxt;
+
+      .header_input__dropdown {
+        margin-right: 16px;
+        width: 87px;
+        height: 34px;
+        cursor: pointer;
+        &:hover {
+          .dropdown-content {
+            display: block;
+          }
+        }
+        .dropdown-content {
+          display: none;
+        }
+      }
+
+      .btnPageTabsInactive {
+        max-width: 136px;
+      }
+
+
+
+    }
+  }
+
+  .section {
+
+    //  new messages section
+    .messages {
+
+      .messages_table {
+        width: 818px;
+        background-color: $colorWhite;
+        border: 1px solid #DDDDDD;
+        border-radius: 8px;
+        padding-right: 24px;
+        padding-left: 17px;
+
+        .messages_table__head {
+          margin-top: 10px;
+          .messages_table__head__left {
+            //@include fontParBodyText;
+          }
+          .messages_table__head__right a {
+            @include fontParHighlighter;
+            color: $colorPrimary;
+            text-decoration: none;
+          }
+        }
+
+        .messages_table__row {
+          padding-top: 10px;
+          //border-top: 1px solid #DDDDDD;
+          .messages_order {
+            @include fontParSubHeading;
+            color: $colorPrimaryTxt;
+            width: max-content;
+          }
+          .messages_from {
+            @include fontParBodyText;
+            color: $colorPrimaryTxt;
+            width: max-content;
+            margin-top: 5px;
+          }
+
+          .messages_status {
+            margin-left: 25px;
+          }
+        }
+      }
+    }
+
+    //========  start top clients section
+    .top-clients {
+      max-width: 400px;
+      width: 100%;
+      border: 1px solid #DDDDDD;
+      border-radius: 8px;
+      background-color: $colorWhite;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      margin-top: 16px;
+      margin-right: 16px;
+
+      .top-clients_head {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      .divider {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 7px;
+      }
+
+      .top-clients_row {
+        padding: 8px 15px;
+        .top-clients_client {
+          @include fontParBodyText;
+          width: 25%;
+          color: $colorPrimaryTxt;
+        }
+        .top-clients_progressBar {
+          width: 65%;
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+        .top-clients_count {
+          @include fontParBodyText;
+          width: 10%;
+          color: $colorPrimaryTxt;
+          text-align: end;
+        }
+      }
+
+    }
+
+    //========  end top clients section
+
+  }
+
+
+  //  title of sections
+  h5 {
+    margin-top: 0;
+    margin-bottom: 0;
+    @include fontParBodyText;
+    color: $colorPrimaryTxt;
+  }
+
+
+  // divider between rows in table
+  .divider {
+    border: 1px solid #DDDDDD;
+    width: 859px;
+    margin-left: -17px;
+    margin-top: 10px;
+  }
+
+}

@@ -1,0 +1,58 @@
+<main>
+
+  <form [formGroup]="register" (ngSubmit)="register()">
+    <div class="title">
+      Register Your Merchaint Account
+    </div>
+
+    <div class="setUpAccount">
+      Please setup your account.
+    </div>
+
+    <div class="dividerCustom"></div>
+
+    <div class="email_block" fxLayout="column" fxLayoutAlign="center start">
+      <label for="email">Business email address*</label>
+      <input id="email" class="inputNormal" type="text" placeholder="Enter email address" formControlName="email">
+      <!--      <app-control-messages [control]="formControls['email']"></app-control-messages>-->
+    </div>
+
+    <div class="password_block" fxLayout="column" fxLayoutAlign="center start">
+      <label for="password">Create password*</label>
+      <input id="password" class="inputNormal" type="password" placeholder="Password" formControlName="password">
+      <!--      <app-control-messages [control]="formControls['email']"></app-control-messages>-->
+      <!--      <app-control-messages [control]="loginForm.controls['password']"></app-control-messages>-->
+    </div>
+
+    <div class="password_block" fxLayout="column" fxLayoutAlign="center start">
+      <label for="confirmPassword">Repeat password*</label>
+      <input id="confirmPassword" class="inputNormal" type="password" placeholder="Repeat password" formControlName="confirmPassword">
+      <!--      <app-control-messages [control]="formControls['email']"></app-control-messages>-->
+      <!--      <app-control-messages [control]="loginForm.controls['password']"></app-control-messages>-->
+    </div>
+
+    <div class="agreeTerms" fxLayout="row" fxLayoutAlign="start center">
+      <input type="checkbox" id="checkbox">
+      <label for="checkbox"></label>
+      <div class="agreeTerms_txt">I agree to <span>Terms & Conditions</span></div>
+    </div>
+
+    <!--    <div class="forgPassw">-->
+    <!--      Forget Password?-->
+    <!--    </div>-->
+
+    <div class="register_block">
+      <button class="login btnBigActive" routerLink="../registration-step2">
+        Register Account
+      </button>
+    </div>
+
+    <!--    <div class="newAccount">-->
+    <!--      <p class="fontParBodyText">-->
+    <!--        Need a new Merchaint account?-->
+    <!--      </p>-->
+    <!--    </div>-->
+
+  </form>
+
+</main>

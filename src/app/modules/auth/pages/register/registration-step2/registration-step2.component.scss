@@ -1,0 +1,128 @@
+//  fonts
+@import "src/assets/fonts/Roboto/stylesheet";
+
+//  variables
+@import "src/assets/styles/_vars";
+
+//  typography
+@import "src/assets/styles/_typography";
+
+
+main {
+  width: 100%;
+  max-width: 425px;
+
+  .title {
+    @include fontParHeadline;
+    color: $colorPrimaryTxt;
+    margin-bottom: 12px;
+  }
+
+  .setUpAccount {
+    @include fontParBodyText;
+    color: $colorPrimaryTxt;
+    margin-bottom: 19px;
+  }
+
+  .dividerCustom {
+    border: 1px solid #DDDDDD;
+    width: 100%;
+    max-width: 425px;
+  }
+
+  .email_block {
+    margin-top: 17px;
+  }
+
+  .email_block {
+    margin-bottom: 25px;
+  }
+
+  .email_block label {
+    @include fontParSubHeading;
+    color: $colorBlack;
+    margin-bottom: 15px;
+  }
+
+  .inputNormal {
+    width: 100%;
+    max-width: 425px;
+  }
+
+  .agreeTerms {
+    position: relative;
+    @include fontParBodyText;
+    color: $colorBlack;
+    cursor: pointer;
+    width: max-content;
+    display: flex;
+    align-items: flex-end;
+
+    .agreeTerms_txt {
+      margin-left: 14px;
+    }
+
+    //  start around checkbox
+    label {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 50%;
+      cursor: pointer;
+      height: 20px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 20px
+    }
+
+    label:after {
+      border: 2px solid #fff;
+      border-top: none;
+      border-right: none;
+      content: "";
+      height: 5px;
+      left: 5px;
+      opacity: 0;
+      position: absolute;
+      top: 5px;
+      transform: rotate(-45deg);
+      width: 9px;
+    }
+
+    input[type="checkbox"] {
+      visibility: hidden;
+    }
+
+    input[type="checkbox"]:checked + label {
+      background-color: $colorPrimary;
+      border-color: $colorPrimary;
+    }
+
+    input[type="checkbox"]:checked + label:after {
+      opacity: 1;
+    }
+
+    .container {
+      margin: 0 auto;
+    }
+    //  end around checkbox
+
+  }
+
+  .register_block {
+    margin-top: 42px;
+    margin-bottom: 24px;
+  }
+
+  //.newAccount {
+  //  text-align: center;
+  //  a {
+  //    @include fontParBodyText;
+  //    color: $colorBlack;
+  //    cursor: pointer;
+  //  }
+  //}
+
+
+
+}

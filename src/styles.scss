@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+
+//  media breakpoints
+@import "src/assets/styles/media-breakpoints";
+
+//  fonts
+@import "src/assets/fonts/Roboto/stylesheet";
+
+//  variables
+@import "src/assets/styles/_vars";
+
+//  typography
+@import "src/assets/styles/_typography";
+
+//  inputs
+@import "src/assets/styles/_inputs";
+
+//  buttons
+@import "src/assets/styles/_buttons";
+
+
+body {
+  margin: 0;
+}

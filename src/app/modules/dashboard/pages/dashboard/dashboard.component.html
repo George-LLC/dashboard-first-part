@@ -1,0 +1,101 @@
+<div class="content">
+
+  <div class="header">
+
+    <div class="header_title">
+      <h2> {{ getTitle() }} </h2>
+    </div>
+
+    <!--     start new messages section  -->
+    <div class="header_input" fxLayout="row">
+
+      <div class="header_input__dropdown dropdown" fxLayout="row" fxLayoutAlign="center center">
+        Today
+<!--        <div class="dropdown_back">-->
+<!--          <div class="dropdown-content">-->
+<!--            <div>item 1</div>-->
+<!--            <div>item 2</div>-->
+<!--            <div>item 3</div>-->
+<!--          </div>-->
+<!--        </div>-->
+      </div>
+
+      <button class="btnPageTabsInactive">+ Create a Doc</button>
+
+    </div>
+<!--   end new messages section   -->
+
+  </div>
+
+  <div class="section">
+
+<!--    start new messages section  -->
+    <div class="messages">
+            <div class="messages_table">
+                <div class="messages_table__head"  fxLayout="row" fxLayoutAlign="space-between center">
+                  <h5 class="messages_table__head__left">New Messages ({{ newMessages.length }})</h5>
+                  <div class="messages_table__head__right"><a href="">Read all</a></div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div *ngFor="let message of newMessages" class="messages_table__row"  fxLayout="row" fxLayoutAlign="space-between center" style="width: inherit">
+
+                 <div fxLayout="column" style="width: inherit">
+                     <div fxLayout="row" fxLayoutAlign="space-between center" style="width: inherit">
+
+                        <div fxLayout="row">
+                           <div>
+                             <div class="messages_order">{{message.order}}</div>
+                             <div class="messages_from">{{message.from}}</div>
+                           </div>
+                           <button class="messages_status btnFlagActiveYellow">{{message.status}}</button>
+                        </div>
+
+                         <div fxLayout="row">
+<!--                             <div class="messages_type">{{message.type}}</div>-->
+                             <img src="../../../../../assets/images/icons/incoming.png" alt="incoming outcoming">
+                             <div class="messages_date">{{message.date}}</div>
+                         </div>
+                     </div>
+
+                     <div class="divider"></div>
+
+                 </div>
+
+                </div>
+
+            </div>
+    </div>
+<!--    end new messages section  -->
+
+
+<!--    start top clients section   -->
+    <div class="top-clients">
+
+      <div class="top-clients_head">
+        <h5>Top Clients</h5>
+      </div>
+
+      <div class="divider" style="width: 100%"></div>
+
+      <div class="top-clients_row" *ngFor="let eachClient of topClients" fxLayout="row">
+        <div class="top-clients_client">{{eachClient.client}}</div>
+        <app-progress-bar class="top-clients_progressBar" [total]="30" [progress]="eachClient.progressValue"></app-progress-bar>
+        <div class="top-clients_count">{{eachClient.progressValue}}</div>
+      </div>
+
+    </div>
+<!--    end top clients section   -->
+
+  </div>
+
+
+
+
+
+
+
+
+</div>
+

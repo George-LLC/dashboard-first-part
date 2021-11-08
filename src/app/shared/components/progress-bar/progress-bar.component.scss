@@ -1,0 +1,21 @@
+//  variables
+@import "src/assets/styles/_vars";
+
+.progress-bar-container {
+  background-color: $colorInactive;
+  border-radius: 15px;
+}
+.progress-bar {
+  height: 16px;
+  width: 0;
+  border-radius: 15px;
+}
+.progress-bar.green {
+  background-color: $colorOptionalForLabel;
+}
+.progress-bar.yellow {
+  background-color: $colorOptional2ForLabel;
+}
+.progress-bar.red {
+  background-color: $colorWarningNegative;
+}

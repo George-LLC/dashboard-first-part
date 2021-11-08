@@ -1,0 +1,46 @@
+<main>
+
+  <form [formGroup]="register" (ngSubmit)="register()">
+    <div class="title">
+      Business Details
+    </div>
+
+    <div class="setUpAccount">
+      Your business details are required.
+    </div>
+
+    <div class="dividerCustom"></div>
+
+    <div class="email_block" fxLayout="column" fxLayoutAlign="center start">
+      <label for="name">Your name*</label>
+      <input id="name" class="inputNormal" type="text" placeholder="Enter name" formControlName="name">
+      <!--      <app-control-messages [control]="formControls['email']"></app-control-messages>-->
+    </div>
+
+    <div class="email_block" fxLayout="column" fxLayoutAlign="center start">
+      <label for="businessName">Business name*</label>
+      <input id="businessName" class="inputNormal" type="text" placeholder="Enter name" formControlName="businessName">
+      <!--      <app-control-messages [control]="formControls['email']"></app-control-messages>-->
+    </div>
+
+    <div class="email_block" fxLayout="column" fxLayoutAlign="center start">
+      <label for="country">Country*</label>
+      <input id="country" class="inputNormal" type="text" placeholder="Select one..." formControlName="country">
+      <!--      <app-control-messages [control]="formControls['email']"></app-control-messages>-->
+    </div>
+
+    <div class="email_block" fxLayout="column" fxLayoutAlign="center start">
+      <label for="industry">Industry*</label>
+      <input id="industry" class="inputNormal" type="text" placeholder="Select one..." formControlName="industry">
+      <!--      <app-control-messages [control]="formControls['email']"></app-control-messages>-->
+    </div>
+
+    <div class="register_block">
+      <button class="login btnBigActive" routerLink="../registration-step2">
+        Register Account
+      </button>
+    </div>
+
+  </form>
+
+</main>

@@ -1,0 +1,40 @@
+<main>
+
+  <form [formGroup]="loginForm" (ngSubmit)="login()">
+    <div class="title">
+      Log in
+    </div>
+
+    <div class="dividerCustom"></div>
+
+    <div class="email_block" fxLayout="column" fxLayoutAlign="center start">
+      <label for="email">Email Address</label>
+      <input id="email" class="inputNormal" type="text" placeholder="Enter email address" formControlName="email">
+<!--      <app-control-messages [control]="formControls['email']"></app-control-messages>-->
+    </div>
+
+    <div class="password_block" fxLayout="column" fxLayoutAlign="center start">
+      <label for="password">Password</label>
+      <input id="password" class="inputNormal" type="text" placeholder="Password" formControlName="password">
+<!--      <app-control-messages [control]="formControls['email']"></app-control-messages>-->
+<!--      <app-control-messages [control]="loginForm.controls['password']"></app-control-messages>-->
+    </div>
+
+    <div class="forgPassw">
+      Forget Password?
+    </div>
+
+    <div class="login_block">
+      <button class="login btnBigActive">
+        Log In
+      </button>
+    </div>
+
+    <div class="newAccount">
+      <a class="fontParBodyText" routerLink="../registration-step1">
+        Need a new Merchaint account?
+      </a>
+    </div>
+  </form>
+
+</main>
